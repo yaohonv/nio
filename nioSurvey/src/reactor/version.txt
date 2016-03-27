@@ -1,0 +1,17 @@
+
+
+NIO的server程序设计版本变迁
+
+
+
+NIOServer: 最偷懒的IO多路复用的实现
+
+v1.0 :  reactor基本实现（reactor-1）    读、业务逻辑、写还在一个handler中
+
+v1.1 ：   功能进一步分离（reactor-1）       功能结构较为清晰,剥离业务逻辑处理（reactor-2）
+
+v1.2 :  连接建立与其他IO事件分开监听（reactor-3）
+
+v1.3 ：   进一步抽象
+
+v1.4 ：   测试read send的剥离（目前的结构设计）
